@@ -1,4 +1,4 @@
-﻿//АВТО УЛЬТА НА НЕКРОМАНА
+//АВТО УЛЬТА НА НЕКРОМАНА
 //Автор vk.com/elite_for_227
 //Группа проекта - https://vk.com/d2jscripts
 //////////END/////////////
@@ -11,7 +11,7 @@ var aganimdamage = [0.6, 0.9, 1.2]
 var LenseBonusRange = 200
 var rangeCast = 500
 
-function reaverbeaverFunc(){
+function AutoUltNecrophos(){
 	var MyEnt = parseInt( Players.GetPlayerHeroEntityIndex(Game.GetLocalPlayerID()) )
 	var Ulti = Entities.GetAbilityByName(MyEnt, 'necrolyte_reapers_scythe' )
 	var UltiRange = Abilities.GetCastRange( Ulti )
@@ -70,7 +70,7 @@ var AutoUltNecrophosOnCheckBoxClick = function(){
 	}
 
 	function maincheck(){ $.Schedule( interval,function(){
-		reaverbeaverFunc()
+		AutoUltNecrophos()
 		if(AutoUltNecrophos.checked)
 			maincheck()
 	})}
